@@ -2,10 +2,8 @@ public class Calculadora {
 
     private float num1;
     private float num2;
-    private String soma;
-    private String subtracao;
-    private String multiplicacao;
-    private String divisao;
+    private String opcao;
+    private String resultado;
 
     public float getNum1() {
         return num1;
@@ -13,14 +11,6 @@ public class Calculadora {
 
     public void setNum1(float num1) {
         this.num1 = num1;
-    }
-
-    public String getSoma() {
-        return soma;
-    }
-
-    public void setSoma(String soma) {
-        this.soma = soma;
     }
 
     public float getNum2() {
@@ -31,27 +21,19 @@ public class Calculadora {
         this.num2 = num2;
     }
 
-    public String getSubtracao() {
-        return subtracao;
+    public String getOpcao() {
+        return opcao;
     }
 
-    public void setSubtracao(String subtracao) {
-        this.subtracao = subtracao;
+    public void setOpcao(String opcao) {
+        this.opcao = opcao;
     }
 
-    public String getMultiplicacao() {
-        return multiplicacao;
+    public String getResultado() {
+        return resultado;
     }
 
-    public void setMultiplicacao(String multiplicacao) {
-        this.multiplicacao = multiplicacao;
-    }
-
-    public String getDivisao() {
-        return divisao;
-    }
-
-    public void setDivisao(String divisao) {
-        this.divisao = divisao;
+    public void setResultado(String resultado) {
+        this.resultado = resultado;
     }
 }

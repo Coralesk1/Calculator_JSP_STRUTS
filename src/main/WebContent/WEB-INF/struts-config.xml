@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts-config PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+        "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+
+    <form-beans>
+
+        <form-bean name="CalculadoraForm" type="org.apache.struts.action.DynaActionForm">
+            <form-property name="calculadora" type="Calculadora"/>
+        </form-bean>
+
+    </form-beans>
+
+    <action-mappings>
+
+        <action path="/Calculadora"
+                type="CalculadoraAction"
+                name="CalculadoraForm"
+                scope="request"
+                validate="false">
+            <forward name="success" path="/TelaBaixaArquivo.jsp"/>
+        </action>
+
+        <!--    |path= nome que vai na URL
+                |type= é a minha class que da logica
+                |name= liga a action ao formulario que foi definido acima
+                |scope= no request - os dados são destruidos em determinada hora / session - os dados são mantidos para
+                serem usados em outras paginas.
+                |validate= é um filtro do proprio struts ele ira validar os dados e se houver algum erro vai cancelar
+                a operação e se estiver como false ele só ignora essa validação e entrega os dados para o execute do
+                jeito que estão.
+                -->
+
+    </action-mappings>
+
+    <message-resources parameter="MessageResources" />
+
+</struts-config>

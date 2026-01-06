@@ -1,3 +1,88 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fundo da página */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #7b2ff7, #f857a6);
+    display: flex;
+    flex-direction: column; /* ? ISSO resolve */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Caixa da calculadora */
+body > div, 
+body {
+    text-align: center;
+}
+
+/* Container visual da calculadora */
+body {
+    padding: 20px;
+}
+
 h1 {
-    color: aqua;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #fbeaff;
+    font-weight: bold;
+}
+
+/* Inputs e select */
+input,
+select {
+    width: 260px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+/* Select */
+select {
+    cursor: pointer;
+}
+
+/* Botão */
+button {
+    margin-top: 20px;
+    width: 260px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(135deg, #ff5fad, #a450ff);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efeito hover no botão */
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Efeito ao clicar */
+button:active {
+    transform: scale(0.98);
 }
