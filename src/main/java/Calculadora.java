@@ -1,23 +1,23 @@
 public class Calculadora {
 
-    private float num1;
-    private float num2;
+    private Float num1;
+    private Float num2;
     private String opcao;
     private String resultado;
 
-    public float getNum1() {
+    public Float getNum1() {
         return num1;
     }
 
-    public void setNum1(float num1) {
+    public void setNum1(Float num1) {
         this.num1 = num1;
     }
 
-    public float getNum2() {
+    public Float getNum2() {
         return num2;
     }
 
-    public void setNum2(float num2) {
+    public void setNum2(Float num2) {
         this.num2 = num2;
     }
 

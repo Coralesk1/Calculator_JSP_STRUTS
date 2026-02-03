@@ -20,7 +20,7 @@
                 name="CalculadoraForm"
                 scope="request"
                 validate="false">
-            <forward name="success" path="/TelaBaixaArquivo.jsp"/>
+            <forward name="success" path="/TelaCalculadora.jsp"/>
         </action>
 
         <!--    |path= nome que vai na URL
@@ -31,7 +31,7 @@
                 |validate= é um filtro do proprio struts ele ira validar os dados e se houver algum erro vai cancelar
                 a operação e se estiver como false ele só ignora essa validação e entrega os dados para o execute do
                 jeito que estão.
-                -->
+         -->
 
     </action-mappings>
 

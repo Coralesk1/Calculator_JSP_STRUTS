@@ -1,3 +1,4 @@
+
 import org.apache.struts.action.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -23,13 +24,21 @@ public class CalculadoraAction extends Action {
         Calculadora calculadora = (Calculadora) dynaForm.get("calculadora");
 
         if(calculadora.getOpcao().equals("1")){     /* Adição */
+
             calculadora.setResultado(String.valueOf(calculadora.getNum1() + calculadora.getNum2()));
+
         } else if (calculadora.getOpcao().equals("2")) {      /*Subtração */
+
             calculadora.setResultado(String.valueOf(calculadora.getNum1() - calculadora.getNum2()));
+
         } else if (calculadora.getOpcao().equals("3")) {      /*Multiplicação */
+
             calculadora.setResultado(String.valueOf(calculadora.getNum1() * calculadora.getNum2()));
+
         }else if (calculadora.getOpcao().equals("4")) {      /*Divisão */
+
             calculadora.setResultado(String.valueOf(calculadora.getNum1() / calculadora.getNum2()));
+
         }
 
         return mapping.findForward("success");

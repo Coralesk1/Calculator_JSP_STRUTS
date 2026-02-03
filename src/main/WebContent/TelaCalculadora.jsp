@@ -24,10 +24,10 @@ logic: = Faz condicionais (if) e repetições (for).
     <html:form action="/Calculadora" method="post">
 
         <label for="number1">Number 1:</label>
-        <input type="number" name="calculadora.numero1">
+        <input type="number" name="calculadora.num1">
 
         <label for="number2">Number 2:</label>
-        <input type="number" name="calculadora.numero2">
+        <input type="number" name="calculadora.num2">
 
         <label for="opcao">Escolha a operação:</label>
         <select name="calculadora.opcao">
@@ -42,9 +42,12 @@ logic: = Faz condicionais (if) e repetições (for).
         <button type="submit">Calcular</button>
     </html:form>
 
-    <h3>Resultado:
-        <bean:write name="CalculadoraForm" property="calculadora.resultado" />
-    </h3>
+    <div class="result-container">
+        <p class="result-label">Resultado Final</p>
+        <div class="result-value">
+            <bean:write name="CalculadoraForm" property="calculadora.resultado" />
+        </div>
+    </div>
 
 </body>
 </html>
